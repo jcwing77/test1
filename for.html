@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function print99(){
+            for(var i=1;i<=9;i++){
+                var msg="";
+                for(var j=1;j<=i;j++){
+                    msg+=(i+"*"+j+"="+(i*j)+"\t");
+                }
+                console.log(msg);
+   
+            }
+        }
+    
+    function printNames(){
+        var names=[];
+        while(true){
+            var input=prompt("请输入姓名");
+            if(input=="exit"){
+                break;
+            }
+            names[names.length]=input;
+            
+    }console.log(names);
+    }
+    
+    function chenji(){
+        var j=1;
+        for(var i=10;i>=1;i--){
+            j*=i;
+            
+        }
+        console.log(j);
+
+    }
+    function print100(){
+        for(var i=1;i<=100;i++){
+            console.log(i);
+        }
+    }
+
+    </script>
+    <input type="button" value="打印99乘法表" onclick="print99()">
+    <input type="button" value="打印员工姓名" onclick="printNames()">
+    <input type="button" value="打印1~10的乘积" onclick="chenji()">
+    <input type="button" value="打印1~100的所有数字" onclick="print100()">
+</body>
+</html>
